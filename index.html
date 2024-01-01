@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deliver X</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script src="https://unpkg.com/gsap@3.12.4/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrolltrigger@1.0.0/dist/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="logo" id="logo">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.svg" />
+          </a>
+        </div>
+
+        <div
+          class="navigation d-flex justify-content-between align-items-center"
+        >
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item d-lg-none d-md-block">
+              <a class="nav-link" href="#"> Cart(0) </a>
+            </li>
+            <li class="nav-item d-none d-lg-none d-sm-block">
+              <button type="button" class="btn btn-outline">
+                Download app
+              </button>
+            </li>
+            <li class="nav-item d-none d-lg-none d-sm-block">
+              <button type="button" class="btn btn-primary">Register</button>
+            </li>
+          </ul>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link" href="#">
+                  Cart(<span class="cartCount">0</span>)
+                </a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <button type="button" class="btn btn-outline">
+                  Download app
+                </button>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <button type="button" class="btn btn-primary">Register</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-holder overflow-hidden" id="home">
+      <div class="home-page container-fluid">
+        <div class="row d-flex flex-lg-row flex-md-column flex-sm-column">
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mt-md-5 mt-sm-5"
+          >
+            <div class="text-center position-relative z-index-1">
+              <h1 class="fw-bold mb-5 text-1000">Page not found</h1>
+              <p class="mb-5 me-5 ms-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <button type="button" class="btn btn-primary mb-5">
+                Go back home
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center justify-content-center mt-md-5 mt-sm-5"
+          >
+            <img
+              src="images/food.jpeg"
+              class="bg-image img-fluid object-fit-cover h-100 w-100"
+              alt="pizza"
+              style="max-height: 50vh; min-height: 40px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <div class="not-found container">
+      <div
+        class="row mt-5 mb-5 d-flex flex-lg-row flex-md-column flex-sm-column justify-content-center align-items-center justify-content-md-center align-items-md-start justify-content-sm-start align-items-sm-start"
+      >
+        <div
+          class="col-lg-6 col-md-12 mb-5 text-md-start text-lg-start text-sm-start text-center"
+        >
+          <a href="" class="">
+            <img class="img-fluid" src="images/logo.svg" alt="logo" />
+          </a>
+          <p class="mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut.
+          </p>
+        </div>
+
+        <div
+          class="col-lg-6 col-md-12 d-flex flex-lg-row flex-md-row flex-sm-column justidy-content-evenly justify-content-md-start align-items-md-start text-md-start"
+        >
+          <button
+            type="button"
+            class="btn btn-primary mb-3 mb-md-0 me-md-2"
+          >
+            <i class="fa-apple"></i>Download for iOS
+          </button>
+          <button type="button" class="btn btn-primary mb-3 mb-md-0">
+            <i class="fa-android"></i>Download for Android
+          </button>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="row footer-top d-flex justify-content-evenly">
+          <div class="col-md-3 justify-content-md-start">
+            <h5 class="fw-bold mt-5 mb-5">Menu</h5>
+            <div class="row">
+              <ul class="col-md-6 navbar-nav">
+                <li class="nav-item">
+                  <a href="/home" class="text-200 nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/about" class="text-400 nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contact" class="text-400 nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/blog" class="text-400 nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="https://delivertemplate.webflow.io/blog/4-tips-to-increase-your-side-income-in-food-delivery"
+                    class="text-400 nav-link"
+                    >Blog posts</a
+                  >
+                </li>
+              </ul>
+              <ul class="col-md-6 navbar-nav">
+                <li class="nav-item">
+                  <a href="/plans" class="text-400 nav-link">Plans</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="https://delivertemplate.webflow.io/product/deluxe"
+                    class="text-400 nav-link"
+                    >Plan single</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="/download" class="text-400 nav-link">Register</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h5 class="fw-bold mt-5 mb-5">Utility Pages</h5>
+            <div class="bottom-navigation">
+              <ul class="navbar-nav justify-content-start">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://delivertemplate.webflow.io/template-pages/start-here"
+                    >Start here</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://delivertemplate.webflow.io/template-pages/style-guide"
+                    >Styleguide</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://delivertemplate.webflow.io/401"
+                    >Password protected</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://delivertemplate.webflow.io/404"
+                    >404 Not found</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://delivertemplate.webflow.io/template-pages/licenses"
+                    >Licenses</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://delivertemplate.webflow.io/template-pages/changelog"
+                    >Changelog</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link underlined-link fw-bold"
+                    href="https://brixtemplates.com/#webflow-templates?utm_source=Template+Header+Footer&utm_medium=Link&utm_campaign=Redirect&utm_id=More+Webflow+Templates#webflow-templates"
+                    >Browse More Templates</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 justify-content-end">
+            <h5 class="fw-bold mt-5 mb-5">Available in</h5>
+            <div class="row d-flex flex-lg-row flex-md-column flex-sm-column">
+              <ul
+                class="availability-info col-md-6 justify-content-start mb-3 mb-md-0"
+              >
+                <li class="d-flex align-items-end mb-2">
+                  <img src="images/san.svg" class="img-fluid rounded-4" />
+                  <h6 class="p-3 fw-bold">San Francisco, CA</h6>
+                </li>
+                <li class="d-flex align-items-end mb-2">
+                  <img src="images/new.svg" class="img-fluid rounded-4" />
+                  <h6 class="p-3 fw-bold">New York, NY</h6>
+                </li>
+              </ul>
+
+              <ul
+                class="availability-info col-md-6 justify-content-start mb-3 mb-md-0"
+              >
+                <li class="d-flex align-items-end mb-2">
+                  <img src="images/los.svg" class="img-fluid rounded-4" />
+                  <h6 class="p-3 fw-bold">Los Angeles, CA</h6>
+                </li>
+                <li class="d-flex align-items-end mb-2">
+                  <img src="images/seat.svg" class="img-fluid rounded-4" />
+                  <h6 class="p-3 fw-bold">Seattle, WA</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row footer-bottom">
+          <div
+            class="col-md-12 d-flex justify-content-center align-items-center"
+          >
+            <p class="m-5 text-400">
+              Copyright © Deliver X | Designed by
+              <a
+                href="https://brixtemplates.com/"
+                target="_blank"
+                class="red-link"
+                >BRIX Templates</a
+              >
+              - Powered by
+              <a href="https://webflow.com/" target="_blank" class="red-link"
+                >Webflow</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="js/animatePage.js"></script>
+  </body>
+</html>
